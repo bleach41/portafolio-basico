@@ -523,7 +523,7 @@ seccion sobre mi */
 
 .cv .fila .col .item {
   padding: 20px;
-  overflow: auto;
+  text-overflow: clip;
   margin-bottom: 20px;
   background-color: #242424;
   position: relative;
