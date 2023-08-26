@@ -158,9 +158,9 @@ seccion sobre mi */
   display: flex;
 }
 
-.mi_info .fila .col {
+/* .mi_info .fila .col {
   width: 50%;
-}
+} */
 
 .mi_info .fila .col h3 {
 
@@ -180,19 +180,25 @@ seccion sobre mi */
 
 }
 
-.mi_info .fila .col ul li strong {
+.mi_info .fila .col ul li {
+  justify-content: space-between;
+}
 
+.mi_info .fila .col ul li strong {
+  margin-bottom: 2px;
   display: inline-block;
   color: #69A7D7;
   width: 130px;
 }
 
+
 .mi_info .fila .col ul li span {
 
-  background-color: #69A7D7;
-  padding: 7px;
+  background-color: #69a7d75b;
+  padding: 3px;
   font-weight: bold;
   border-radius: 5px;
+  margin-top: 3px;
 }
 
 .mi_info .fila .col .contenedor-intereses {
