@@ -387,7 +387,7 @@ seccion sobre mi */
 
 .skills .skill .vue {
   width: 0%;
-  animation: 2s python forwards;
+  animation: 2s vue forwards;
 }
 
 @keyframes vue {
