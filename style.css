@@ -509,9 +509,7 @@ seccion sobre mi */
 
 }
 
-.cv .fila .col {
-  min-width: 350px;
-}
+
 
 .cv .fila .izquierda {
   border-right: 2px solid #242424;
@@ -524,7 +522,8 @@ seccion sobre mi */
 }
 
 .cv .fila .col .item {
-  padding: 25px;
+  padding: 20px;
+  overflow: auto;
   margin-bottom: 20px;
   background-color: #242424;
   position: relative;
