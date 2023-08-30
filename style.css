@@ -377,11 +377,11 @@ seccion sobre mi */
 
 @keyframes python {
   0% {
-    width: 0%;
+    width: 0%
   }
 
   100% {
-    width: 80%;
+    width: 80%
   }
 }
 
@@ -529,7 +529,6 @@ seccion sobre mi */
 
 .cv .fila .col .item {
   padding: 20px;
-  min-width: 2em;
   margin-bottom: 20px;
   background-color: #242424;
   position: relative;
@@ -826,7 +825,11 @@ seccion sobre mi */
 
   }
 
+
   nav.responsive {
+    transition: 0.3s;
+    background-color: #24242455;
+    backdrop-filter: blur(5px);
     display: block;
     position: absolute;
     right: 0;
@@ -869,9 +872,39 @@ seccion sobre mi */
     display: block;
   }
 
+  .cv .fila .col {
+    width: 90%;
+  }
+
   .cv .fila .derecha {
 
     margin-left: 20px;
+  }
+
+  .portfolio .galeria {
+    display: block;
+    width: 100%;
+  }
+
+  .portfolio .galeria .proyecto {
+    max-width: 100%;
+  }
+
+  .portfolio .galeria .proyecto img {
+    width: 100%;
+  }
+
+  .contacto .fila {
+    display: block;
+  }
+
+  .contacto .fila .col {
+    width: 100%;
+  }
+
+  .contacto .fila img {
+
+    width: 100%;
   }
 
 }

@@ -19,16 +19,16 @@
       <nav id="nav">
         <ul>
           <i class="fa-solid fa-code"></i>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#mi_info">Mi_info</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#cv">Curriculum</a></li>
-          <li><a href="#portfolio">Portafolio</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <i class="fa-solid fa-code"></i>
+          <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+          <li><a href="#mi_info" onclick="seleccionar()">Mi_info</a></li>
+          <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+          <li><a href="#cv" onclick="seleccionar()">Curriculum</a></li>
+          <li><a href="#portfolio" onclick="seleccionar()">Portafolio</a></li>
+          <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+          <i class="fa-solid fa-code" onclick="seleccionar()"></i>
         </ul>
       </nav>
-      <div class="nav-responsive">
+      <div class="nav-responsive" onclick="mostrarOcultarMenu()">
         <i class="fa-solid fa-bars"></i>
       </div>
     </header>
@@ -119,7 +119,7 @@
           <div class="skill">
             <span>Javascripts</span>
             <div class="barra-skill">
-              <div class="progreso javascripts">
+              <div class="progreso" data-animation="javascripts">
                 <span>75%</span>
               </div>
             </div>
@@ -127,7 +127,7 @@
           <div class="skill">
             <span>HTML & CSS</span>
             <div class="barra-skill">
-              <div class="progreso htmlcss">
+              <div class="progreso" data-animation="htmlcss">
                 <span>90%</span>
               </div>
             </div>
@@ -135,7 +135,7 @@
           <div class="skill">
             <span>PYTHON</span>
             <div class="barra-skill">
-              <div class="progreso python">
+              <div class="progreso" data-animation="python">
                 <span>80%</span>
               </div>
             </div>
@@ -143,7 +143,7 @@
           <div class="skill">
             <span>VUE</span>
             <div class="barra-skill">
-              <div class="progreso vue">
+              <div class="progreso" data-animation="vue">
                 <span>60%</span>
               </div>
             </div>
@@ -151,7 +151,7 @@
           <div class="skill">
             <span>GIT</span>
             <div class="barra-skill">
-              <div class="progreso git">
+              <div class="progreso" data-animation="git">
                 <span>90%</span>
               </div>
             </div>
@@ -164,7 +164,7 @@
           <div class="skill">
             <span>Trabajo en Equipo</span>
             <div class="barra-skill">
-              <div class="progreso trabajo">
+              <div class="progreso" data-animation="trabajo">
                 <span>90%</span>
               </div>
             </div>
@@ -172,7 +172,7 @@
           <div class="skill">
             <span>Tolerancia a la frustracion</span>
             <div class="barra-skill">
-              <div class="progreso tolerancia">
+              <div class="progreso" data-animation="tolerancia">
                 <span>90%</span>
               </div>
             </div>
@@ -180,7 +180,7 @@
           <div class="skill">
             <span>Impetud en el aprendizaje</span>
             <div class="barra-skill">
-              <div class="progreso impetud">
+              <div class="progreso" data-animation="impetud">
                 <span>95%</span>
               </div>
             </div>
@@ -188,7 +188,7 @@
           <div class="skill">
             <span>Constancia</span>
             <div class="barra-skill">
-              <div class="progreso constancia">
+              <div class="progreso" data-animation="constancia">
                 <span>100%</span>
               </div>
             </div>
@@ -336,6 +336,7 @@
       <a href="#"><i class="fa-brands fa-facebook"></i></a>
     </div>
   </section>
+  <script src="main.js"></script>
 </body>
 
 </html>
