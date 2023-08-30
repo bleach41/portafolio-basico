@@ -15,23 +15,25 @@ function seleccionar() {
   menuVisible = false
 
 }
-
 function efectoHabilidades() {
   var habilidades = document.getElementsByClassName("progreso");
+  var scrollPos = window.scrollY;
+  var windowHeight = window.innerHeight;
 
   for (var i = 0; i < habilidades.length; i++) {
     var habilidad = habilidades[i];
-    var distancia_habilidad = window.innerHeight - habilidad.getBoundingClientRect().top;
+    var distancia_habilidad = habilidad.getBoundingClientRect().top + scrollPos;
 
-    if (distancia_habilidad >= 300) {
+    // Verificar si el elemento está en el viewport
+    if (distancia_habilidad < (scrollPos + windowHeight - 100)) {
       habilidad.classList.add(habilidad.dataset.animation);
     }
   }
 }
 
-window.onscroll = function () {
-  efectoHabilidades();
-}
+window.addEventListener('scroll', function () {
+  requestAnimationFrame(efectoHabilidades);
+});
 // document.querySelector('#app').innerHTML = `
 //   <div>
 

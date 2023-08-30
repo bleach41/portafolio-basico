@@ -129,6 +129,11 @@ seccion sobre mi */
 
 }
 
+.mi_info .contenido-section a {
+  text-decoration: none;
+
+}
+
 .mi_info .contenido-section {
   max-width: 1100px;
   margin: auto;
