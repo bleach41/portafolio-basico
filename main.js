@@ -31,6 +31,16 @@ function efectoHabilidades() {
   }
 }
 
+const video = document.querySelector('.overlay-video video');
+
+video.addEventListener('mouseover', () => {
+  video.play();
+});
+
+video.addEventListener('mouseout', () => {
+  video.pause();
+});
+
 window.addEventListener('scroll', function () {
   requestAnimationFrame(efectoHabilidades);
 });
