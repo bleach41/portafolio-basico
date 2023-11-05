@@ -405,6 +405,21 @@ seccion sobre mi */
   }
 }
 
+.skills .skill .react {
+  width: 0%;
+  animation: 2s vue forwards;
+}
+
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
 .skills .skill .git {
   width: 0%;
   animation: 2s git forwards;
